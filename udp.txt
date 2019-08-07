@@ -1,0 +1,44 @@
+1. udp server代码如下
+
+import socket
+global a 
+global b
+a=0
+b=0
+# 新建一个udp socket
+udpSocket=socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
+
+# 绑定端口
+udpSocket.bind(("0.0.0.0",7002))
+print(f"bind 7002....")
+
+# 接收和发送
+while True:
+    # 接收用recvfrom
+    print(2)
+    data,client_address=udpSocket.recvfrom(1024)
+    print(f"从{client_address}接收到的数据：{data}")
+    a=a+1
+    b=b+len(data)
+    c=("我累计接收了%d，总字节数%d，此数据为")%(a,b)
+    # 发送sentto
+    udpSocket.sendto(c.encode("utf-8")+data,client_address)
+
+
+2. udp client代码如下
+
+import socket
+
+# 新建一个udp socket
+udpSocket=socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
+
+address=("127.0.0.1",7002)
+
+udpSocket.sendto(b"hello",address)
+# 接收下一个数据
+data = udpSocket.recv(1024)
+s=data.decode("utf-8")
+print(f"接收到的数据：{s}")
+
+# 关闭连接
+udpSocket.close()
