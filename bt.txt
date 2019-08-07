@@ -1,0 +1,189 @@
+1. 代码
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <Button
+
+            android:id="@+id/bt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="button1"
+           android:layout_gravity="top"
+    >
+
+    </Button>
+
+    <Button
+            android:id="@+id/bt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="button2"
+    />
+    <Button
+            android:id="@+id/bt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="button3"
+    />
+</LinearLayout>
+
+
+2. 代码
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <Button
+
+            android:id="@+id/bt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="button1"
+           android:layout_gravity="top"
+    >
+
+    </Button>
+
+    <Button
+            android:id="@+id/bt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="button2"
+    />
+    <Button
+            android:id="@+id/bt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="button3"
+    />
+</LinearLayout>
+
+
+3. 代码
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <Button
+
+            android:id="@+id/bt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="button1"
+           android:layout_gravity="top"
+    >
+
+    </Button>
+
+    <Button
+            android:id="@+id/bt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="button2"
+            android:layout_gravity="center_vertical"
+    />
+    <Button
+            android:id="@+id/bt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="button3"
+            android:layout_gravity="bottom"
+    />
+</LinearLayout>
+
+
+4. 代码
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <EditText
+            android:id="@+id/et"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:inputType="text"
+            android:hint="type something"
+            android:layout_weight="1"
+            android:layout_toLeftOf="@id/bt"
+            android:textSize="20sp"
+
+    />
+    <Button
+
+            android:id="@+id/bt"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="SEND"
+            android:layout_weight="1"
+            android:layout_marginTop="0dp"
+            >
+
+    </Button>
+
+</LinearLayout>
+
+5.代码
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+<RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+    <Button
+            android:id="@+id/bt1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:text="button1"
+
+    />
+    <Button
+
+            android:id="@+id/bt2"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_above="@id/bt1"
+            android:layout_toLeftOf="@id/bt1"
+            android:text="button2"
+
+            >
+
+    </Button>
+
+    <Button
+            android:id="@+id/bt3"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="button3"
+            android:layout_toRightOf="@id/bt1"
+            android:layout_above="@id/bt1"
+    />
+    <Button
+            android:id="@+id/bt4"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bt1"
+            android:text="button4"
+            android:layout_toRightOf="@id/bt1"
+    />
+    <Button
+            android:id="@+id/bt5"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bt1"
+            android:layout_toLeftOf="@id/bt1"
+            android:text="button5"
+    />
+</RelativeLayout>
+
+</LinearLayout>
